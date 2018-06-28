@@ -100,7 +100,7 @@ public class WeatherActivity extends AppCompatActivity {
                 drawerLayout.openDrawer(GravityCompat.START);
             }
         });
-       /* button5=(ImageView)findViewById(R.id.button5);
+        button5=(ImageView)findViewById(R.id.button5);
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -108,7 +108,7 @@ public class WeatherActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-        });*/
+        });
     }
     public void requestWeather(final  String weatherId){
         String weatherUrl="http://guolin.tech/api/weather?cityid=" + weatherId + "&key=7edf27c1aa43458b80b3eecc94428ee7";

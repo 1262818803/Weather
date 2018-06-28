@@ -19,7 +19,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WeatherActivity"></activity>
+        <service
+            android:name=".service.AutoUpdateService"
+            android:enabled="true"
+            android:exported="true" />
+        <activity android:name=".WeatherActivity" />
+        <activity android:name=".Login"></activity>
+        <activity android:name=".ZhuActivity"></activity>
+        <activity android:name=".UserActivity" />
+        <activity android:name=".Note.Add_note"/>
     </application>
 
 </manifest>
