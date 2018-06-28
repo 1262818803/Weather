@@ -28,6 +28,7 @@ import okhttp3.Callback;
 import okhttp3.Response;
 import ui.com.coolweather.gson.Forecast;
 import ui.com.coolweather.gson.Weather;
+import ui.com.coolweather.service.AutoUpdateService;
 import ui.com.coolweather.util.HttpUtil;
 import ui.com.coolweather.util.Utility;
 
@@ -204,8 +205,8 @@ public class WeatherActivity extends AppCompatActivity {
             carWashText.setText(carWash);
             sportText.setText(sport);
             weatherLayout.setVisibility(View.VISIBLE);
-            /*Intent intent = new Intent(this, AutoUpdateService.class);
-            startService(intent);*/
+            Intent intent = new Intent(this, AutoUpdateService.class);
+            startService(intent);
         }else{
             Toast.makeText(WeatherActivity.this,"获取天气信息失败",Toast.LENGTH_SHORT).show();
         }
